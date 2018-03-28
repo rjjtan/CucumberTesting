@@ -1,0 +1,6 @@
+
+.DS_Store
+.idea/
+BDDTesting.iml
+pom.xml
+target/
