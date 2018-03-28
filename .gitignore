@@ -3,3 +3,4 @@
 .idea/
 BDDTesting.iml
 pom.xml
+target/
