@@ -41,5 +41,3 @@ Feature: Company Management
   Scenario: Updating the company plan
     Given admin clicks on the list of the company
     Then admin will update the created company
-
-#Test
