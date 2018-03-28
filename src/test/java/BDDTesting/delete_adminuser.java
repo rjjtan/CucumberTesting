@@ -19,6 +19,7 @@ public class delete_adminuser extends _abstract {
 
     @Then ("^admin will successfully deleted the admin user$")
     public void admin_will_successfully_deleted_the_admin_user() throws Throwable{
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 }
