@@ -30,7 +30,7 @@ Feature: Login Management
   Scenario: Verify valid credentials as standard admin
     Given standard admin enters valid username and password
       |Fields   |Value    |
-      |username |berry    |
+      |username |cherry   |
       |password |kinvoman |
     Then standard admin should be able to login
 

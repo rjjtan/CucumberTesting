@@ -1,6 +1,6 @@
 Feature: Company Management
 
-  @regression
+  @regression @standard
   Scenario: Adding a new Company
     Given admin click the add company button
     Then admin will input the company details
@@ -10,7 +10,7 @@ Feature: Company Management
       |Email      |root@email.com|
     And admin should create a new company
 
-  @regression
+  @regression @standard
   Scenario: Validating new company
     Given admin enters existing company details
       |Fields     |Value         |

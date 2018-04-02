@@ -1,6 +1,6 @@
 Feature: User Management in Company Profile
 
-  @regression
+  @regression @standard
   Scenario: Adding company user details
     Given admin clicks the add user button
     And admin will input the correct company user details
@@ -10,7 +10,7 @@ Feature: User Management in Company Profile
       |Lastname |Tan                 |
     Then admin will successfully add the company user
 
-  @regression
+  @regression @standard
   Scenario: Company user validation
     Given admin click the add user button
     And admin will input the existing user details
@@ -30,7 +30,7 @@ Feature: User Management in Company Profile
     And admin clicks the button to confirm
     Then admin successfully remove the company user
 
-  @regression
+  @regression @standard
   Scenario: Company user validation
     Given admin clicks the edit icon
     And admin updates the company user info
@@ -38,7 +38,7 @@ Feature: User Management in Company Profile
       |email    |root@email.com      |
     Then validation message will display
 
-  @regression
+  @regression @standard
   Scenario: Update company user details
     Given admin clicked the edit icon
     And admin update the email field
@@ -46,7 +46,7 @@ Feature: User Management in Company Profile
       |email    |mynew@email.com     |
     Then admin successfully update the company user info
 
-  @regression
+  @regression @standard
   Scenario: Transferring root role
     Given admin clicked the transfer root role
     Then new user will have a root role

@@ -13,6 +13,7 @@ public class update_userrole extends _abstract{
 
     @Given ("^admin clicked the edit icon to edit user role$")
     public void admin_clicked_the_edit_icon_to_edit_user_role() throws Throwable{
+        Thread.sleep(2000);
         List<WebElement> we  = driver.findElements(By.cssSelector("i.fa.fa-pencil"));
         we.get(1).click();
     }
