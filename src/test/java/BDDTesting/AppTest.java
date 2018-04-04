@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "/Users/kinvoqa/IdeaProjects/BDDTesting/src/test/java/features",
-        tags = "@login"
+        tags = "@log"
 )
 
 public class AppTest{
