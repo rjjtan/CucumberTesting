@@ -13,6 +13,7 @@ public class delete_adminuser extends _abstract {
 
     @Given ("^admin clicks the delete icon to delete the created admin user$")
     public void admin_clicks_the_delete_icon_to_delete_the_created_admin_user() throws Throwable{
+        Thread.sleep(2000);
         List<WebElement> del  = driver.findElements(By.cssSelector("i.fa.fa-trash-o"));
         del.get(0).click();
     }
