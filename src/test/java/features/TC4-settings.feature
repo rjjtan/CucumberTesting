@@ -1,6 +1,6 @@
-Feature: Settings (Admin User Management)
+Feature: Settings - Admin User Management
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Creating standard user
     Given admin clicks the settings menu
     And clicks the add user button
@@ -13,7 +13,7 @@ Feature: Settings (Admin User Management)
       |password     |password1           |
     And admin successfully added a new standard user
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Creating admin user
      Given admin clicks the button to add a new admin user
      Then admin fills out the fields for admin user
@@ -25,7 +25,7 @@ Feature: Settings (Admin User Management)
        |password     |password1              |
      And admin successfully added a new admin user
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Username validation
     When admin fills out the username with existing username
       |Fields       |Value               |
@@ -36,7 +36,7 @@ Feature: Settings (Admin User Management)
       |password     |password2           |
     And validation message for existing username should appear
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Email address validation
     When admin fills out the email address with existing email address
       |Fields       |Value               |
@@ -47,7 +47,7 @@ Feature: Settings (Admin User Management)
       |password     |password3           |
     Then validation message for existing email address should appear
 
-  @regression
+  @regression @end2end
   Scenario: Update AdminUser's first name
     Given admin clicks the edit icon to edit firstname
     And admin update the user firstname
@@ -55,7 +55,7 @@ Feature: Settings (Admin User Management)
       |firstname    |Stephanie      |
     Then admin successfully update the admin firstname
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Update AdminUser's last name
     Given admin clicks the edit icon to edit lastname
     And admin update the user lastname
@@ -63,13 +63,13 @@ Feature: Settings (Admin User Management)
       |lastname    |Go             |
     Then admin successfully update the user lastname
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Update User Role
    Given admin clicked the edit icon to edit user role
    And admin update the user role
    Then admin successfully update the user role
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Delete admin user
     Given admin clicks the delete icon to delete the created admin user
     Then admin will successfully deleted the admin user
