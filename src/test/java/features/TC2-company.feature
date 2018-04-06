@@ -1,6 +1,6 @@
 Feature: Company Management
 
-  @regression @standard
+  @end2end @standard @end2end
   Scenario: Adding a new Company
     Given admin click the add company button
     Then admin will input the company details
@@ -10,7 +10,7 @@ Feature: Company Management
       |Email      |root@email.com|
     And admin should create a new company
 
-  @regression @standard
+  @regression @standard @end2end
   Scenario: Validating new company
     Given admin enters existing company details
       |Fields     |Value         |
@@ -22,7 +22,7 @@ Feature: Company Management
       |Fields     |Value         |
       |newslug    |mynewslug     |
 
-  @regression
+  @regression @end2end
   Scenario: Deleting the created company with invalid password
     Given admin clicked the delete button
     And admin will enter incorrect password
@@ -30,14 +30,14 @@ Feature: Company Management
       |password   |invalid       |
     Then password validation message will display
 
-  @regression
+  @regression @end2end
   Scenario: Deleting the created company
     Given admin click the delete company button
     Then admin will enter correct pass
       |Fields     |Value         |
       |password   |kinvoman      |
 
-  @regression
+  @regression @end2end
   Scenario: Updating the company plan
     Given admin clicks on the list of the company
     Then admin will update the created company
