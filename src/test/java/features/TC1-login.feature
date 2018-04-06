@@ -1,6 +1,6 @@
 Feature: Login Management
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Verify invalid login credentials
     Given admin open a browser and navigate to admin tool url
     When admin enters invalid username or password
@@ -9,7 +9,7 @@ Feature: Login Management
       |password |example  |
     Then admin should not be able to login successfully
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Verify valid login credentials
     When admin enters valid username and valid password
       |Fields   |Value    |
