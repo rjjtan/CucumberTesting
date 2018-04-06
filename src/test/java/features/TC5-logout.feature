@@ -1,6 +1,6 @@
 Feature: Logout
 
-  @regression @log
+  @regression @log @end2end
   Scenario: Verify Logout
     Given user has already logged in
     And user click logout
