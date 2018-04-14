@@ -31,5 +31,4 @@ public class verify_username extends _abstract {
         System.out.println(message);
         driver.findElement(By.xpath("//input[@placeholder ='Enter First name']")).sendKeys(Keys.ESCAPE);
     }
-    // add to git
 }
